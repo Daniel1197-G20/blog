@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8faf9;
+  --foreground: #17211d;
+}
+
+.dark {
+  --background: #102013;
+  --foreground: #edf3eb;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+* { border-color: #dde7e2; }
+
+::selection { background: #b8ddcf; color: #062e24; }
